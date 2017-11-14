@@ -95,7 +95,7 @@ EOF
         server_name ${DOMAIN_NAME} www.${DOMAIN_NAME};
 
         location / {
-                try_files $uri $uri/ =404;
+                try_files \$uri \$uri/ =404;
         }
     }
 EOF
